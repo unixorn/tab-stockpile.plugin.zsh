@@ -21,5 +21,5 @@
 
 
 # Add our plugin's bin diretory to user's path
-PLUGIN_BIN="$(dirname $0)/bin"
-export PATH=${PATH}:${PLUGIN_BIN}
+ZSH_COMPLETIONS="$(dirname $0)/bin"
+export fpath=($fpath ${ZSH_COMPLETIONS})
